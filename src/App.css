@@ -12,10 +12,20 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+sidebar-toggle {
+  position: "absolute";
+  right: "25px";
+  margin-left: 2rem;
+  font-size: 2rem;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +45,98 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* CustomDropdown.css */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures button is on the right */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+}
+/*/sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss/*/
+.dropdown-menu {
+  position: absolute;
+  right: 25px; /* Aligns with the button */
+  top: 50px; /* Adjust as needed based on your header height */
+  background-color: white; /* Dropdown background color */
+  border: 1px solid #ccc; /* Border around the dropdown */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensures the dropdown is above other content */
+  width: 150px; /* Width of the dropdown */
+}
+
+.dropdown-menu p {
+  padding: 10px; /* Padding for the text */
+  margin: 0; /* Remove default margin */
+  color: black; /* Text color */
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  text-align: left;
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}
+.dropDownProfile {
+  position: absolute;
+  top: 4.5rem;
+  right: 1.5rem;
+  width: 200px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid gray;
+}
+.dropDownProfile::beforem {
+  content: "";
+  position: absolute;
+  top: —0.7rem;
+  right: 1.1rem;
+  width: 20px;
+  height: 26px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+}
+.x {
+  color: black;
+}
+.dropdown-button {
+  display: block;
+  padding: 10px 15px;
+  color: #333; /* Dark gray */
+  text-align: left;
+  background: #f0f0f0; /* Light gray */
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 5px; /* Space between buttons */
+  font-size: 16px; /* Adjusted for a balanced look */
+  font-weight: 500; /* Slightly bold */
+  line-height: 1.4; /* Ensures good readability */
+}
+
+.dropdown-button:hover {
+  background-color: #e0e0e0; /* Slightly darker gray */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.dropdown-button:active {
+  background-color: #d0d0d0; /* Even darker gray for active state */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Pressed effect */
 }
